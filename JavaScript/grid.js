@@ -34,9 +34,10 @@ for(let i=0;i<rows;i++){
         cell.setAttribute("spellcheck",false); // for spelling cheaking.
 
         // for row and coloum identification in storage matrix.
-        cell.setAttribute("rId",i);
+        cell.setAttribute("rId", i);
         cell.setAttribute("cId",j);
         
+   
         addListnerForAddressBarDisplay(cell,i,j);
     }
     grid.appendChild(gridRow);
@@ -50,4 +51,6 @@ function addListnerForAddressBarDisplay(cell,i,j){
         address.value= `${colID}${rowID}`;
     })
 }
+
+
 
